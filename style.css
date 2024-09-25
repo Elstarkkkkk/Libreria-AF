@@ -1,60 +1,70 @@
 /* Estilos generales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
 header {
-    background-color: #ffffff;
-    color: #fff;
-    padding: 0px;
+  background-color: #ffffff;
+  color: #fff;
+  padding: 0px;
 }
 
 .titulo{
-    display: flex;
-    padding-left: 691px;
+  display: flex;
+  padding-left: 691px;
 
 }
 
 nav {
-    background-color: #ed7373;
-    padding: 20px;
+  background-color: #ed7373;
+  padding: 20px;
+}
 
-
-
-
-  }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 600px;
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-left: 600px;
-    
-  }
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: larger;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 15px 10px;
+}
+
+.fimg{
   
-  nav li {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: larger;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 15px 10px;
-  }
+  padding-top: 0px;
+  width: 1200px;
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 6%;
+}
 
-  .fimg{
-    padding-left: 400px;
-    padding-top: 50px;
-    width: 1000px;
-    image-resolution: 700, 1080;
-  }
+.separador{
+  width: 50%;
+}
 
-  .separador{
-    width: 50%;
-  }
+.cartas {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 
+.cartas img {
+  width: 100%;
+  height: auto;
+}
