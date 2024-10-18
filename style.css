@@ -59,14 +59,11 @@ nav a {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  width: 200px; /* Ajusta el ancho según tus necesidades */
+  width: 200px; 
   margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  position:relative
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 
-.cartas img {
-  width: 100%;
-  height: auto;
-}
