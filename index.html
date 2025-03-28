@@ -1,47 +1,213 @@
-<!--NOT A VIRUS-->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca en Linea</title>
     <link rel="stylesheet" href="style.css">
+    <title>FABooks</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul id="taskb">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Mis Alquileres</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-            </ul>
-        </nav>
-        <h1 class="titulo">Nuestra Biblioteca</h1>
+        
+        <div class="inline-container">
+            <img src="resources/Logo.svg" alt="FABooks Logo" class="Logo">
+            <nav>
+                <a href="#" class="--Link">Inicio</a>
+                <a href="#" class="--Link">Nosotros</a>
+                <a href="/catalogos.html" class="--Link">Catalogo</a>
+                <a href="#" class="--Link">Contacto</a>
+                <a href="#" class="--button">
+                    Iniciar Sesión
+                </a>
+            </nav>
+        </div>
     </header>
     <main>
-    <center><img  class="fimg"  src="imagenes/l/Editable Background design template - Made with PosterMyWall (1).jpg"></center>
-        <hr class="separador">
-
-            <section class="carts">
-                <div class="cartas">
-                    <img src="libro.png">
-                    <p>@descipcion del libro@</p>
+        <section class="hero">
+            <div>
+                <h1 class="--title">Descubre Tu Próxima Gran Lectura</h1>
+                <p class="--desc">Explora nuestra amplia colección de libros. Desde bestsellers hasta joyas literarias por descubrir, encuentra historias que te inspirarán y te transportarán a nuevos mundos.</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar por título, autor o género..." class="search-bar">
+                    <button class="search-button">
+                        Buscar
+                    </button>
                 </div>
-                <div class="cartas">
-                    <img src="libro.png">
-                    <p>@descipcion del libro@</p>
+            </div>
+            <img src="resources/F (Posters (Portrait)).png" alt="##" width="375" height="375">
+        </section>
+    </main>
+    <section class="bestsellers">
+        <div class="container">
+            <h1 class="section-title">Los Más Vendidos</h1>
+            <p class="section-description">
+                Descubre los libros que están cautivando a nuestros lectores
+            </p>
+            <div class="carousel-container">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="books-carousel">
+                    <div class="book-card">
+                        <img src="resources/elproblemafinal.jpg" alt="Libro 1">
+                        <h3>El Problema Final</h3>
+                        <p class="author">Arturo Pérez-Reverte</p>
+                        <p class="price">$24.99</p>
+                        <div class="rating"><span>⭐ 4.8</span></div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="resources/holly.jpg" alt="Libro 2">
+                        <h3>Holly</h3>
+                        <p class="author">Stephen King</p>
+                        <p class="price">$29.99</p>
+                        <div class="rating"><span>⭐ 4.9</span></div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="resources/elcuco.jpg" alt="Libro 3">
+                        <h3>El Cuco de Cristal</h3>
+                        <p class="author">Javier Castillo</p>
+                        <p class="price">$19.99</p>
+                        <div class="rating"><span>⭐ 4.7</span></div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="resources/lapaciente.jpg" alt="Libro 4">
+                        <h3>La Paciente Silenciosa</h3>
+                        <p class="author">Alex Michaelides</p>
+                        <p class="price">$21.99</p>
+                        <div class="rating"><span>⭐ 4.6</span></div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="resources/elitaliano_grande.jpg" alt="Libro 5">
+                        <h3>El Italiano</h3>
+                        <p class="author">Arturo Pérez-Reverte</p>
+                        <p class="price">$23.99</p>
+                        <div class="rating"><span>⭐ 4.5</span></div>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
                 </div>
-                <div class="cartas">
-                    <img src="libro.png">
-                    <p>@descipcion del libro@</p>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <section class="new-releases">
+        <div class="container">
+            <h1 class="section-title">Recién Publicados</h1>
+            <p class="section-description">
+                Descubre las últimas novedades que están causando sensación entre nuestros lectores
+            </p>
+            <div class="new-release-banner">
+                <div class="book-info">
+                    <h2>El Problema Final</h2>
+                    <p class="author">Arturo Pérez-Reverte</p>
+                    <p class="description">
+                        Una historia que te mantendrá en vilo hasta la última página. El nuevo bestseller del aclamado autor español.
+                    </p>
+                    <div class="book-stats">
+                        <span class="rating">⭐ 4.9</span>
+                        <span class="sales">10K+ vendidos</span>
+                    </div>
+                    <button class="cta-button">Comprar Ahora</button>
                 </div>
-            </section>
-    </main>       
-    <footer>
-    
-
-    </footer>     
+                <div class="book-cover">
+                    <img src="resources/elproblemafinal.jpg" alt="El Problema Final">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <h1 class="sectionT-title">Lo Que Dicen Nuestros Lectores</h1>
+            <p class="sectionT-description">
+                Descubre las experiencias de nuestra comunidad de lectores apasionados
+            </p>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="icon"><span class="material-symbols-outlined">
+                        person
+                        </span></div>
+                    <p>"Una librería excepcional. Su selección de libros es impresionante y el servicio de recomendación personalizada es fantástico."</p>
+                    <div class="name">María García</div>
+                    <div class="role">Lectora Ávida</div>
+                </div>
+                <div class="testimonial">
+                    <div class="icon"><span class="material-symbols-outlined">
+                        person
+                        </span></div>
+                    <p>"Los precios son inmejorables y la entrega siempre es puntual. ¡Mi fuente confiable para todas mis lecturas!"</p>
+                    <div class="name">Carlos Ruiz</div>
+                    <div class="role">Club de Lectura</div>
+                </div>
+                <div class="testimonial">
+                    <div class="icon"><span class="material-symbols-outlined">
+                        person
+                        </span></div>
+                    <p>"Me encanta la comunidad de lectores que han creado. Las reseñas son muy útiles para descubrir nuevos libros."</p>
+                    <div class="name">Ana Martínez</div>
+                    <div class="role">Blogger Literaria</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog-cta">
+        <h1>¿Buscas Más Libros?(po ve y encuentralo lion)</h1>
+        <p>
+          Explora nuestro catálogo completo con miles de títulos. Desde clásicos atemporales hasta las últimas novedades editoriales.
+        </p>
+        <div class="cta-container">
+          <a href="/html/Catalogo.html" class="explore-button">Explorar Catálogo</a>
+        </div>
+        <p class="sub-text">
+          Más de 10,000 títulos disponibles en diferentes géneros y formatos
+        </p>
+    </section>
+    <script src="script.js"></script>
 </body>
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Sobre Nosotros</h3>
+          <ul>
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="#">Ubicaciones</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Síguenos</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 FABooks. Todos los derechos reservados.
+        <div class="footer-links">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Política de Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
